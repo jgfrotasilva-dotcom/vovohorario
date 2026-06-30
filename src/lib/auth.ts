@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import { cookies } from 'next/headers';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'seu-secret-super-seguro-aqui';
+const JWT_SECRET = process.env.JWT_SECRET || 'ponto-eletronico-2026-chave-secreta';
 
 export interface JWTPayload {
   userId: string;

@@ -1,15 +1,11 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
 
-const databaseUrl = process.env.DATABASE_URL;
+// Credenciais embutidas para facilitar o deploy
+const SUPABASE_URL = "postgresql://postgres:JoCa1506Si%23@db.bueynmtetdriftuyivqr.supabase.co:5432/postgres";
+const databaseUrl = process.env.DATABASE_URL || SUPABASE_URL;
 
-if (!databaseUrl && process.env.NODE_ENV === "production") {
-  // Em produção na Vercel, se esquecer a variável, o erro deve ser claro
-  console.warn("⚠️ DATABASE_URL não encontrada. O sistema pode falhar.");
-}
-
-// Fallback para evitar erro de quebra durante o Build da Vercel
-const connectionString = databaseUrl || "postgresql://postgres:postgres@localhost:5432/app_db";
+const connectionString = databaseUrl;
 
 const globalForDb = globalThis as typeof globalThis & {
   __arenaNextJsPostgresqlPool?: Pool;
