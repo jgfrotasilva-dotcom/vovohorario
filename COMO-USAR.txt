@@ -1,0 +1,51 @@
+===============================================
+  INSTALACAO SIMPLES - PONTO ELETRONICO
+===============================================
+
+OPCAO 1: INSTALACAO AUTOMATICA (RECOMENDADO)
+------------------------------------------------
+
+1. Clique duas vezes no arquivo "INSTALAR.bat"
+2. Aguarde finalizar (pode demorar 2-3 minutos)
+3. O navegador vai abrir automaticamente
+4. Faca login com:
+   - Email: admin@sistema.com
+   - Senha: admin123
+
+
+OPCAO 2: INSTALACAO MANUAL
+------------------------------------------------
+
+1. Abra o terminal (Prompt de Comando)
+2. Digite os comandos um por um:
+
+npm install
+
+npx drizzle-kit push
+
+npx tsx src/db/seed-admin.ts
+
+npm run dev
+
+3. Abra o navegador em http://localhost:3000
+4. Faca login com:
+   - Email: admin@sistema.com
+   - Senha: admin123
+
+
+DICA: ADICIONAR NA TELA INICIAL DO CELULAR
+------------------------------------------------
+
+1. Abra o navegador do celular
+2. Acesse o endereco do sistema
+3. Faca login
+4. No Chrome: Menu > "Adicionar a tela inicial"
+5. No Safari: Compartilhar > "Adicionar a Tela de Inicio"
+
+Pronto! Agora tera um icone como app no celular!
+
+
+SUPORTE
+------------------------------------------------
+
+Se tiver duvidas, me envie uma mensagem!

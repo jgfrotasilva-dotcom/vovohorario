@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+  }
+  .print\:border-0 {
+    border: 0 !important;
+  }
+  .print\:p-4 {
+    padding: 1rem !important;
+  }
+}
